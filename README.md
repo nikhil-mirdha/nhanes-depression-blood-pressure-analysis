@@ -25,3 +25,6 @@ This repository contains the reproducible code for a secondary data analysis of 
 
 ## License
 This project is licensed under the MIT License.
+
+## Preliminary Results
+![Boxplot of Systolic Blood Pressure by Depression Status](output/bp_depression_boxplot.png)
