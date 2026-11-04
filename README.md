@@ -28,3 +28,9 @@ This project is licensed under the MIT License.
 
 ## Preliminary Results
 ![Boxplot of Systolic Blood Pressure by Depression Status](bp_depression_boxplot.png)
+
+## 🛠️ Developer Notes & Challenges
+
+*   **Data Merging:** One of the biggest challenges was merging the Demographics (`DEMO_J`) and Blood Pressure (`BPX_J`) files, as not all participants had valid MEC exam data. I used `left_join` to ensure we didn't lose participants who had interview data but missing exam values.
+*   **Variable Selection:** Identifying the correct pregnancy status variable (`RIDEXPRG`) required cross-referencing the NHANES codebook, as the standard `RIDPREG` was not present in this cycle's demo file.
+*   **Reproducibility:** This project was built with a "reproducible first" mindset. All data cleaning steps are documented in `01_data_cleaning.R` to ensure that any researcher can replicate these exact results from the raw .xpt files.
